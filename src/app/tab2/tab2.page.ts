@@ -14,7 +14,7 @@ export class Tab2Page {
     private toast: ToastController) {}
 
   scanerCode(){
-    this.scannerCode.scan().then(barcodeData => {
+    this.barcode.scan().then(barcodeData => {
         this.scannerCode = barcodeData.text;
       }
     );
