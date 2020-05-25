@@ -1,11 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      ventana 2
+      Mapa
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
-</ion-content>
+  <div id = map_canvas>
+    <button ion-button (click)="onButtonClick($event)">Ubicacion actual</button>
+  </div>
+  </ion-content>

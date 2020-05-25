@@ -13,6 +13,9 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { Base64ToGallery } from '@ionic-native/base64-to-gallery/ngx';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import { GoogleMaps } from '@ionic-native/google-maps';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,13 +26,17 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     
+    
   ],
   providers: [
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     BarcodeScanner,
+    Geolocation,
+    GoogleMaps,
     Base64ToGallery
+    
   ],
   bootstrap: [AppComponent]
 })
