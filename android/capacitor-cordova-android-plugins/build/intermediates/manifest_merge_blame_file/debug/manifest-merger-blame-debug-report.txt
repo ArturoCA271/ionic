@@ -1,0 +1,55 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:amazon="http://schemas.amazon.com/apk/res/android"
+3    xmlns:android="http://schemas.android.com/apk/res/android"
+4    package="capacitor.android.plugins"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:9:1-76
+12-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:9:18-74
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:10:1-60
+13-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:10:18-58
+14    <uses-permission android:name="android.permission.FLASHLIGHT" />
+14-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:11:1-64
+14-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:11:18-62
+15
+16    <uses-feature
+16-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:12:1-79
+17        android:name="android.hardware.camera"
+17-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:12:15-53
+18        android:required="true" />
+18-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:12:54-77
+19
+20    <application>
+20-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:5:1-8:15
+21        <activity
+21-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:6:1-302
+22            android:name="com.google.zxing.client.android.CaptureActivity"
+22-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:6:11-73
+23            android:clearTaskOnLaunch="true"
+23-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:6:74-106
+24            android:configChanges="orientation|keyboardHidden|screenSize"
+24-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:6:107-168
+25            android:exported="false"
+25-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:6:276-300
+26            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+26-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:6:169-227
+27            android:windowSoftInputMode="stateAlwaysHidden" />
+27-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:6:228-275
+28        <activity
+28-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:7:1-103
+29            android:name="com.google.zxing.client.android.encode.EncodeActivity"
+29-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:7:11-79
+30            android:label="Share" />
+30-->/home/arturo/myApp/geo/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:7:80-101
+31    </application>
+32
+33</manifest>
