@@ -7,7 +7,29 @@
 </ion-header>
 
 <ion-content padding>
-  <div id = map_canvas>
-    <button ion-button (click)="onButtonClick($event)">Ubicacion actual</button>
-  </div>
-  </ion-content>
+
+  <ion-item>
+    <ion-label position = "floating">Latitud uno</ion-label>
+    <ion-input type = "decimal"required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position = "floating">Longitud uno</ion-label>
+    <ion-input type = "decimal"required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position = "floating">Latitud dos</ion-label>
+    <ion-input type = "decimal"required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position = "floating">Longitud dos</ion-label>
+    <ion-input type = "decimal"required></ion-input>
+  </ion-item>
+
+  <ion-button type = "large" color = "primary" (click)="openMaps()" expand="full" > Mejor ruta </ion-button>
+
+
+
+ </ion-content>

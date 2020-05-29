@@ -6,6 +6,10 @@
     <param name="android-package" value="it.nexxa.base64ToGallery.Base64ToGallery"/>
   </feature>
 
+  <feature name="Launcher">
+    <param name="android-package" value="com.hutchind.cordova.plugins.launcher.Launcher"/>
+  </feature>
+
   <feature name="Geolocation">
     <param name="android-package" value="org.apache.cordova.geolocation.Geolocation"/>
   </feature>

@@ -1,77 +1,42 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  GoogleMaps,
-  GoogleMap,
-  GoogleMapsEvent,
-  GoogleMapOptions,
-  CameraPosition,
-  MarkerOptions,
-  Marker,
-  Environment
-}
-from '@ionic-native/google-maps';
 import { Platform } from '@ionic/angular';
-import { Geolocation, Geoposition } from '@ionic-native/geolocation/ngx';
+import { AppLauncher, AppLauncherOptions } from '@ionic-native/app-launcher/ngx';
 
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss']
 })
-export class Tab3Page implements OnInit{
-  lat;
-  long;
-  resp;
-  map: GoogleMap;
+export class Tab3Page{
+  uri?:string;
+  packageName?: string;
 
-  constructor(private plataforma: Platform, private Geo: Geolocation) {}
+  constructor(private plataforma :Platform, private appLauncher: AppLauncher) {}
   
-  async ngOnInit(){
-    
-    await this.plataforma.ready();
-    await this.loadMapa();
-    
-    
-  }
+  
+  openMaps(){
+    const options:AppLauncherOptions = {
+      packageName: 'com.google.android.apps.maps'
+    }
 
+    this.appLauncher.canLaunch(options).then((launched : Boolean) =>{
+      if( launched ){
+        this.appLauncher.launch(options).then(()=>{
 
-  async loadMapa(){
-    Environment.setEnv({
-      'API_KEY_FOR_BROWSER_RELEASE': '',
-      'API_KEY_FOR_BROWSER_DEBUG': ''
-    });
-    this.map = GoogleMaps.create('map_canvas');
-
-
-
-    const rta = await this.Geo.getCurrentPosition();
-    this.lat= rta.coords.latitude;
-    this.long = rta.coords.longitude;
-
-
-    let marker: Marker = this.map.addMarkerSync({
-      title: 'Ionic',
-      icon: 'blue',
-      animation: 'DROP',
-      position: {
-        lat: this.lat,
-        lng: this.long
+        },(error) =>{
+          alert(JSON.stringify(error));
+        })
       }
-    });
-    marker.on(GoogleMapsEvent.MARKER_CLICK).subscribe(() => {
-      alert('clicked');
+      else{
+        alert("Accion no valida")
+      }
+    },(error) =>{
+      alert(JSON.stringify(error));
     });
 
+    
   }
 
-
-
-
-
-
-
-
-  
 }
   
 
