@@ -13,9 +13,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { Base64ToGallery } from '@ionic-native/base64-to-gallery/ngx';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
-import { GoogleMaps } from '@ionic-native/google-maps';
-import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { NgxQRCodeModule } from 'ngx-qrcode2';
+import { AppLauncher } from '@ionic-native/app-launcher/ngx';
 
 
 @NgModule({
@@ -36,9 +35,8 @@ import { NgxQRCodeModule } from 'ngx-qrcode2';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     BarcodeScanner,
-    Geolocation,
-    GoogleMaps,
-    Base64ToGallery
+    Base64ToGallery,
+    AppLauncher
     
   ],
   bootstrap: [AppComponent]
