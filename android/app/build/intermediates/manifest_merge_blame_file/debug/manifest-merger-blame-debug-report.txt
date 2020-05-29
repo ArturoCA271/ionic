@@ -1,0 +1,350 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.ionic.starter"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml
+10
+11    <!-- Permissions -->
+12
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:47:5-67
+13-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:47:22-64
+14    <!-- Camera, Photos, input file -->
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:49:5-79
+15-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:49:22-77
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:50:5-81
+16-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:50:22-78
+17    <!-- Geolocation API -->
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:52:5-81
+18-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:52:22-78
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:53:5-79
+19-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:53:22-76
+20
+21    <uses-feature android:name="android.hardware.location.gps" />
+21-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:54:5-66
+21-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:54:19-63
+22    <!-- Network API -->
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:56:5-79
+23-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:56:22-76
+24    <!-- Navigator.getUserMedia -->
+25    <!-- Video -->
+26    <uses-permission android:name="android.permission.CAMERA" />
+26-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:59:5-65
+26-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:59:22-62
+27    <!-- Audio -->
+28    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+28-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:61:5-71
+28-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:61:22-68
+29    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+29-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:62:5-79
+29-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:62:22-77
+30
+31    <uses-feature
+31-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-23:35
+32        android:glEsVersion="0x00020000"
+32-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-41
+33        android:required="true" />
+33-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-32
+34    <uses-feature android:name="android.hardware.location" />
+34-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:5-62
+34-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:19-59
+35
+36    <uses-permission android:name="android.permission.FLASHLIGHT" />
+36-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-69
+36-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:22-66
+37
+38    <uses-feature
+38-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:5-31:35
+39        android:name="android.hardware.camera"
+39-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:9-47
+40        android:required="true" />
+40-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:9-32
+41
+42    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+42-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:24:5-68
+42-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:24:22-65
+43    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+43-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:26:5-82
+43-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:26:22-79
+44
+45    <application
+45-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:5:5-43:19
+46        android:allowBackup="true"
+46-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:6:9-35
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.2.0] /root/.gradle/caches/transforms-2/files-2.1/cf23515831a30cf8e0e5ff774beb1451/core-1.2.0/AndroidManifest.xml:24:18-86
+48        android:debuggable="true"
+49        android:icon="@mipmap/ic_launcher"
+49-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:7:9-43
+50        android:label="@string/app_name"
+50-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:8:9-41
+51        android:roundIcon="@mipmap/ic_launcher_round"
+51-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:9:9-54
+52        android:supportsRtl="true"
+52-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:10:9-35
+53        android:testOnly="true"
+54        android:theme="@style/AppTheme" >
+54-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:11:9-40
+55        <activity
+55-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:13:9-32:20
+56            android:name="io.ionic.starter.MainActivity"
+56-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:15:13-57
+57            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+57-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:14:13-129
+58            android:label="@string/title_activity_main"
+58-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:16:13-56
+59            android:launchMode="singleTask"
+59-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:18:13-44
+60            android:theme="@style/AppTheme.NoActionBarLaunch" >
+60-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:17:13-62
+61            <intent-filter>
+61-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:20:13-23:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:21:17-69
+62-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:21:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:22:17-77
+64-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:22:27-74
+65            </intent-filter>
+66            <intent-filter>
+66-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:25:13-30:29
+67                <action android:name="android.intent.action.VIEW" />
+67-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:26:17-69
+67-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:26:25-66
+68
+69                <category android:name="android.intent.category.DEFAULT" />
+69-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:27:17-76
+69-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:27:27-73
+70                <category android:name="android.intent.category.BROWSABLE" />
+70-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:28:17-78
+70-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:28:27-75
+71
+72                <data android:scheme="@string/custom_url_scheme" />
+72-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:29:17-68
+72-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:29:23-65
+73            </intent-filter>
+74        </activity>
+75
+76        <provider
+77            android:name="androidx.core.content.FileProvider"
+77-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:35:13-62
+78            android:authorities="io.ionic.starter.fileprovider"
+78-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:36:13-64
+79            android:exported="false"
+79-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:37:13-37
+80            android:grantUriPermissions="true" >
+80-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:38:13-47
+81            <meta-data
+81-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:39:13-41:64
+82                android:name="android.support.FILE_PROVIDER_PATHS"
+82-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:40:17-67
+83                android:resource="@xml/file_paths" />
+83-->/home/arturo/myApp/geo2/android/app/src/main/AndroidManifest.xml:41:17-51
+84        </provider>
+85
+86        <meta-data
+86-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:9-36:71
+87            android:name="com.google.android.geo.API_KEY"
+87-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-58
+88            android:value="AIzaSyBYJ1ixenWxJUCkdfAq5QY0VYbehKL66UE" />
+88-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-68
+89        <meta-data
+89-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:9-39:69
+90            android:name="com.google.android.gms.version"
+90-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-58
+91            android:value="@integer/google_play_services_version" />
+91-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-66
+92
+93        <uses-library
+93-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:9-43:40
+94            android:name="org.apache.http.legacy"
+94-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-50
+95            android:required="false" />
+95-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-37
+96
+97        <activity
+97-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:45:9-51:63
+98            android:name="com.google.zxing.client.android.CaptureActivity"
+98-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:46:13-75
+99            android:clearTaskOnLaunch="true"
+99-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:47:13-45
+100            android:configChanges="orientation|keyboardHidden|screenSize"
+100-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:13-74
+101            android:exported="false"
+101-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:49:13-37
+102            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+102-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:50:13-71
+103            android:windowSoftInputMode="stateAlwaysHidden" />
+103-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:51:13-60
+104        <activity
+104-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:52:9-54:37
+105            android:name="com.google.zxing.client.android.encode.EncodeActivity"
+105-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:53:13-81
+106            android:label="Share" />
+106-->[:capacitor-cordova-android-plugins] /home/arturo/myApp/geo2/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:54:13-34
+107
+108        <service
+108-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+109            android:name="com.getcapacitor.plugin.background.BackgroundTaskService"
+109-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-84
+110            android:exported="false" />
+110-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+111
+112        <receiver android:name="com.getcapacitor.plugin.notification.TimedNotificationPublisher" />
+112-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-100
+112-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:19-97
+113        <receiver android:name="com.getcapacitor.plugin.notification.NotificationDismissReceiver" />
+113-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-101
+113-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:19-98
+114
+115        <meta-data
+115-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-25:37
+116            android:name="firebase_messaging_auto_init_enabled"
+116-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-64
+117            android:value="false" />
+117-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-34
+118
+119        <service
+119-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-33:19
+120            android:name="com.getcapacitor.CapacitorFirebaseMessagingService"
+120-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-78
+121            android:stopWithTask="false" >
+121-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-41
+122            <intent-filter>
+122-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-32:29
+123                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+123-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:17-78
+123-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:25-75
+124            </intent-filter>
+125        </service>
+126        <!--
+127             FirebaseMessagingService performs security checks at runtime,
+128             but set to not exported to explicitly avoid allowing another app to call it.
+129        -->
+130        <service
+130-->[com.google.firebase:firebase-messaging:20.1.2] /root/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:28:9-34:19
+131            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+131-->[com.google.firebase:firebase-messaging:20.1.2] /root/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:29:13-82
+132            android:exported="false" >
+132-->[com.google.firebase:firebase-messaging:20.1.2] /root/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:30:13-37
+133            <intent-filter android:priority="-500" >
+133-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-32:29
+134                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+134-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:17-78
+134-->[:capacitor-android] /home/arturo/myApp/geo2/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:25-75
+135            </intent-filter>
+136        </service>
+137        <service
+137-->[com.google.firebase:firebase-messaging:20.1.2] /root/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:35:9-41:19
+138            android:name="com.google.firebase.components.ComponentDiscoveryService"
+138-->[com.google.firebase:firebase-messaging:20.1.2] /root/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:36:13-84
+139            android:directBootAware="true"
+139-->[com.google.firebase:firebase-common:19.3.0] /root/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+140            android:exported="false" >
+140-->[com.google.firebase:firebase-messaging:20.1.2] /root/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:37:13-37
+141            <meta-data
+141-->[com.google.firebase:firebase-messaging:20.1.2] /root/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:38:13-40:85
+142                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+142-->[com.google.firebase:firebase-messaging:20.1.2] /root/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:39:17-119
+143                android:value="com.google.firebase.components.ComponentRegistrar" />
+143-->[com.google.firebase:firebase-messaging:20.1.2] /root/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:40:17-82
+144            <meta-data
+144-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:32:13-34:85
+145                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+145-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:33:17-96
+146                android:value="com.google.firebase.components.ComponentRegistrar" />
+146-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:34:17-82
+147            <meta-data
+147-->[com.google.firebase:firebase-datatransport:17.0.3] /root/.gradle/caches/transforms-2/files-2.1/c9fdb49c77a6c560ace392ea2d5303c1/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+148                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+148-->[com.google.firebase:firebase-datatransport:17.0.3] /root/.gradle/caches/transforms-2/files-2.1/c9fdb49c77a6c560ace392ea2d5303c1/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+149                android:value="com.google.firebase.components.ComponentRegistrar" />
+149-->[com.google.firebase:firebase-datatransport:17.0.3] /root/.gradle/caches/transforms-2/files-2.1/c9fdb49c77a6c560ace392ea2d5303c1/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+150            <meta-data
+150-->[com.google.firebase:firebase-installations:16.0.0] /root/.gradle/caches/transforms-2/files-2.1/1e98b102015e39078d965ca60768118d/jetified-firebase-installations-16.0.0/AndroidManifest.xml:17:13-19:85
+151                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+151-->[com.google.firebase:firebase-installations:16.0.0] /root/.gradle/caches/transforms-2/files-2.1/1e98b102015e39078d965ca60768118d/jetified-firebase-installations-16.0.0/AndroidManifest.xml:18:17-127
+152                android:value="com.google.firebase.components.ComponentRegistrar" />
+152-->[com.google.firebase:firebase-installations:16.0.0] /root/.gradle/caches/transforms-2/files-2.1/1e98b102015e39078d965ca60768118d/jetified-firebase-installations-16.0.0/AndroidManifest.xml:19:17-82
+153        </service>
+154
+155        <receiver
+155-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:37:9-44:20
+156            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+156-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:38:13-78
+157            android:exported="true"
+157-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:39:13-36
+158            android:permission="com.google.android.c2dm.permission.SEND" >
+158-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:40:13-73
+159            <intent-filter>
+159-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:41:13-43:29
+160                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+160-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:42:17-81
+160-->[com.google.firebase:firebase-iid:20.1.1] /root/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:42:25-78
+161            </intent-filter>
+162        </receiver>
+163
+164        <activity
+164-->[com.google.android.gms:play-services-base:17.0.0] /root/.gradle/caches/transforms-2/files-2.1/38b6c4b545e39be84f8fef63d737cf6b/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+165            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+165-->[com.google.android.gms:play-services-base:17.0.0] /root/.gradle/caches/transforms-2/files-2.1/38b6c4b545e39be84f8fef63d737cf6b/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+166            android:exported="false"
+166-->[com.google.android.gms:play-services-base:17.0.0] /root/.gradle/caches/transforms-2/files-2.1/38b6c4b545e39be84f8fef63d737cf6b/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+167            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+167-->[com.google.android.gms:play-services-base:17.0.0] /root/.gradle/caches/transforms-2/files-2.1/38b6c4b545e39be84f8fef63d737cf6b/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+168
+169        <provider
+169-->[com.google.firebase:firebase-common:19.3.0] /root/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+170            android:name="com.google.firebase.provider.FirebaseInitProvider"
+170-->[com.google.firebase:firebase-common:19.3.0] /root/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+171            android:authorities="io.ionic.starter.firebaseinitprovider"
+171-->[com.google.firebase:firebase-common:19.3.0] /root/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+172            android:exported="false"
+172-->[com.google.firebase:firebase-common:19.3.0] /root/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+173            android:initOrder="100" />
+173-->[com.google.firebase:firebase-common:19.3.0] /root/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+174
+175        <service
+175-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+176            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+176-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+177            android:exported="false" >
+177-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+178            <meta-data
+178-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+179                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+179-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+180                android:value="cct" />
+180-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+181        </service>
+182        <service
+182-->[com.google.android.datatransport:transport-runtime:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+183            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+183-->[com.google.android.datatransport:transport-runtime:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+184            android:exported="false"
+184-->[com.google.android.datatransport:transport-runtime:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+185            android:permission="android.permission.BIND_JOB_SERVICE" >
+185-->[com.google.android.datatransport:transport-runtime:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+186        </service>
+187
+188        <receiver
+188-->[com.google.android.datatransport:transport-runtime:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+189            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+189-->[com.google.android.datatransport:transport-runtime:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+190            android:exported="false" />
+190-->[com.google.android.datatransport:transport-runtime:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+191    </application>
+192
+193</manifest>
