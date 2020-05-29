@@ -35,7 +35,7 @@ export class Tab3Page implements OnInit{
   }
 
 
-  loadMapa(){
+  async loadMapa(){
     Environment.setEnv({
       'API_KEY_FOR_BROWSER_RELEASE': '',
       'API_KEY_FOR_BROWSER_DEBUG': ''
@@ -44,28 +44,9 @@ export class Tab3Page implements OnInit{
 
 
 
-
-
-      this.Geo.getCurrentPosition().then( (position) => {
-          console.log(position);
-          return(position);
-        }
-      );
-      let watch = this.Geo.watchPosition();
-      watch.subscribe((data) => {
-        console.log(data);
-        this.long = data.coords.latitude
-        this.lat = data.coords.longitude
-      });
-
-
-
-
-
-
-
-
-
+    const rta = await this.Geo.getCurrentPosition();
+    this.lat= rta.coords.latitude;
+    this.long = rta.coords.longitude;
 
 
     let marker: Marker = this.map.addMarkerSync({

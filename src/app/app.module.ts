@@ -15,12 +15,15 @@ import { Base64ToGallery } from '@ionic-native/base64-to-gallery/ngx';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 import { GoogleMaps } from '@ionic-native/google-maps';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { NgxQRCodeModule } from 'ngx-qrcode2';
 
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule,
+  imports: [
+    BrowserModule,
+    NgxQRCodeModule,
     IonicModule.forRoot(),
     AppRoutingModule,
     AngularFireAuthModule,

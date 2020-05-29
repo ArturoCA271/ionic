@@ -11,7 +11,7 @@ import { ToastController } from '@ionic/angular';
 export class Tab2Page {
   scannerCode = null;
   constructor(private barcode: BarcodeScanner, private image: Base64ToGallery,
-    private toast: ToastController) {}
+    private toastCtl: ToastController) {}
 
   scanerCode(){
     this.barcode.scan().then(barcodeData => {
@@ -29,9 +29,10 @@ export class Tab2Page {
     this.image.base64ToGallery(data, 
       { prefix:  '_img', mediaScanner:true})
       .then(async res => {
-        let toast = await this.toast.create({
+        let toast = await this.toastCtl.create({
           header: 'QR Code  saved  in your photolibrary'
         });
+        toast.present();
       }, err => console.log('err: ', err)
       );
 
