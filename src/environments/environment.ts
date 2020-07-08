@@ -5,14 +5,7 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyBfbz884KLwog1f1cckI1aFrDf2Hw6fPIk",
-    authDomain: "tabs2-3fb37.firebaseapp.com",
-    databaseURL: "https://tabs2-3fb37.firebaseio.com",
-    projectId: "tabs2-3fb37",
-    storageBucket: "tabs2-3fb37.appspot.com",
-    messagingSenderId: "507794303981",
-    appId: "1:507794303981:web:93bf876efe1ce6823d95e4",
-    measurementId: "G-DS2XKZBFNZ"
+
   }
 
 };
